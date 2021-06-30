@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
-import { sortByDate } from '../utils'
+import { sortByDate } from "../utils";
 
 import Post from "../componets/Post";
 
@@ -11,6 +11,7 @@ export default function Home({ posts }) {
     <div>
       <Head>
         <title>BlogG</title>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>
       <div className="posts">
         {posts.map((post, index) => (
@@ -46,7 +47,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts: posts.sort(sortByDate)
+      posts: posts.sort(sortByDate),
     },
   };
 }

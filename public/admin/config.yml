@@ -1,0 +1,73 @@
+backend:
+  name: test-repo
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: public/images
+public_folder: images
+collections:
+  - name: "posts"
+    label: "posts"
+    files:
+      - label: "Django-crash-course"
+        name: "django-crash-course"
+        file: "posts/django-crash-course.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Excerpt", name: "excerpt", widget: "string" }
+          - { label: "Cover_image", name: "cover_image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Javascript-performance-tips"
+        name: "javascript-performance-tips"
+        file: "posts/javascript-performance-tips.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Excerpt", name: "excerpt", widget: "string" }
+          - { label: "Cover_image", name: "cover_image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "New-in-php-8"
+        name: "new-in-php-8"
+        file: "posts/new-in-php-8.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Excerpt", name: "excerpt", widget: "string" }
+          - { label: "Cover_image", name: "cover_image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Python-book-review"
+        name: "python-book-review"
+        file: "posts/python-book-review.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Excerpt", name: "excerpt", widget: "string" }
+          - { label: "Cover_image", name: "cover_image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "React-crash-course"
+        name: "react-crash-course"
+        file: "posts/react-crash-course.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Excerpt", name: "excerpt", widget: "string" }
+          - { label: "Cover_image", name: "cover_image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Tailwind-vs-bootstrap"
+        name: "tailwind-vs-bootstrap"
+        file: "posts/tailwind-vs-bootstrap.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Excerpt", name: "excerpt", widget: "string" }
+          - { label: "Cover_image", name: "cover_image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Writing-great-unit-tests"
+        name: "writing-great-unit-tests"
+        file: "posts/writing-great-unit-tests.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Excerpt", name: "excerpt", widget: "string" }
+          - { label: "Cover_image", name: "cover_image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+       
